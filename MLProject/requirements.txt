@@ -6,3 +6,4 @@ seaborn
 mlflow==2.19.0
 dagshub
 joblib
+xgboost>=2.0.0
