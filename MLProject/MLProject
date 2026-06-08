@@ -1,6 +1,6 @@
 name: stroke_prediction_project
 
-conda_env: conda.yaml
+env: null
 
 entry_points:
   main:
