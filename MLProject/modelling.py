@@ -15,7 +15,7 @@ mlflow.set_experiment("Stroke Prediction")
 
 mlflow.sklearn.autolog()
 
-with mlflow.start_run():
+mlflow.set_experiment("Stroke Prediction")
 
     model = RandomForestClassifier(
         n_estimators=100,
@@ -30,4 +30,5 @@ with mlflow.start_run():
 
     print("Accuracy:", accuracy)
 
-    mlflow.log_metric("accuracy_manual", accuracy)
+    mlflow.log_metric("accuracy", accuracy)
+    mlflow.sklearn.log_model(model, "model")
