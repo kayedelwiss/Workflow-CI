@@ -16,7 +16,6 @@ mlflow.set_experiment("Stroke Prediction")
 mlflow.sklearn.autolog()
 
 mlflow.set_experiment("Stroke Prediction")
-
     model = RandomForestClassifier(
         n_estimators=100,
         random_state=42
